@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="EnvironmentalStatistics/environmentalStatistics.css"/>
+<script src="EnvironmentalStatistics/environmentalStatistics.js"></script>
+<div id="environmentalStatsContainer">
+	<div id="environmentalStatsTitleBar">
+		<h4>Environmental Statistics</h4>
+		<img src="EnvironmentalStatistics/settingsIcon.png" alt="environmentalStatsIcon"/>
+		<p>Hallway</p>
+	</div>
+	<div id="environmentalStatsContent">
+		<div id="environmentalStatsTemp">
+			<h5>Temperature:</h5><var></var>
+		</div>
+		<div id="environmentalStatsHumidity">
+			<h5>Humidity:</h5><var></var>
+		</div>
+		<div id="environmentalStatsCO2">
+			<h5>CO2:</h5><var></var>
+		</div>
+	</div>
+	<div id="environmentalStatsSettings">
+		<div>
+			<h5>Data</h5>
+			<label>Monitor url <input type="text"></label>
+			<label>Polling rate <input type="text"></label>
+		</div>
+		<div>
+			<h5>Units</h5>
+			<label>Celsius <input type="radio" name="environmentalStatsUnit" value="Celsius" checked="checked"/></label>
+			<label>Fahrenheit <input type="radio" name="environmentalStatsUnit" value="Fahrenheit"/></label>
+			<label>Kelvin <input type="radio" name="environmentalStatsUnit" value="Kelvin"/></label>
+		</div>
+	</div>
+</div>
