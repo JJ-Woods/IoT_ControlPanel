@@ -1,0 +1,42 @@
+<style>
+	.stats-box
+	{
+
+	}
+
+	.climate-icon:hover + .stats-box
+	{
+		display: block;
+	}
+	
+	.climate-icon:hover + .stats-container
+	{
+		border: solid;
+		border-radius: 5px;
+		border-width: 2px;
+	}
+	
+	.stats-box
+	{
+		display: none;
+		width: 200px;
+	}
+	
+	.stats-box:hover
+	{
+		display: block;
+	}
+</style>
+<div class="stats-container">
+	<img src="climate-icon.png" height="30px" width="50px" class="climate-icon"/>
+	<div class="stats-box">
+		<div>
+			<span>Temp: 18c</span>
+			<span>Humidity: 57%</span>
+		</div>
+		<div>
+			<label><input type="radio" name="units" value="c" checked="checked"/> C</label>
+			<label><input type="radio" name="units" value="f"/> F</label>
+		</div>
+	</div>
+</div>

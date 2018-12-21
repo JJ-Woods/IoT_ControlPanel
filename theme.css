@@ -1,0 +1,83 @@
+#container
+{
+	position: relative;
+	top: 2.5%;
+	left: 20%;
+	width: 60%;
+}
+
+.room
+{
+	border-style: groove;
+	overflow: hidden;
+}
+
+.room:before
+{
+	content: "";
+	float: left;
+	padding-bottom: 100%;
+}
+
+.room:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.map-row
+{
+	width: 100%;
+}
+
+.clear
+{
+	
+}
+
+#stacked-row
+{
+	position: absolute;
+	top: 300px;
+}
+
+#stairs
+{
+	height: 125px;
+}
+
+#office
+{
+	height: 175px;
+}
+
+#hallway
+{
+	height: 350px;
+}
+
+#kitchen
+{
+	height: 175px;
+}
+
+#bathroom
+{
+	height: 175px;
+}
+
+#boiler
+{
+	
+}
+
+#lounge
+{
+	height: 400px;
+}
+
+#bedroom
+{
+	height: 225px;
+}
