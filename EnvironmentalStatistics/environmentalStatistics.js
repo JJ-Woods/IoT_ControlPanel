@@ -30,7 +30,8 @@ function GetMonitorUnitFromSettings()
 
 function DisplayEnvironmentalMonitorSettings($pollingRate, $unit)
 {
-
+    $('#environmentalStatsPollRate').val($pollingRate);
+    $('#environmentalStatsContent select').val($unit);
 }
 
 function PollEnvironmentalMonitor($monitorUrl, $unit)
@@ -64,5 +65,6 @@ function LoadEnvironmentalMonitorFromSettings($monitorUrl)
 $(document).ready(function()
 {
     let $monitorUrl = 'localhost/fakeData.asp'; //dummy data
+    $('#environmentalStatsUrl').val($monitorUrl);
     LoadEnvironmentalMonitorFromSettings($monitorUrl);
 });

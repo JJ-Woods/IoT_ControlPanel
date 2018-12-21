@@ -2,7 +2,7 @@
 {
 	position: relative;
 	top: 2.5%;
-	left: 20%;
+	left: 10%;
 	width: 60%;
 }
 
@@ -29,11 +29,6 @@
 .map-row
 {
 	width: 100%;
-}
-
-.clear
-{
-	
 }
 
 #stacked-row
@@ -84,15 +79,50 @@
 
 #infoSidebar
 {
-	width: 15%;
+	width: 20%;
 	position: fixed;
 	top: 0;
 	right: 0;
 	height: 100%;
+	border-left-style: solid;
+}
+
+.infoSidebarContainer
+{
+	height: 180px;
 	border-style: solid;
+	border-width: 1px;
+	border-radius: 0 0 10px 10px;
+
+	& .infoSidebarContainerTitleBar
+	{
+		height: 40px;
+		border-style: none solid solid solid;
+		border-width: 1px;
+		border-radius: 0 0 15px 15px;
+		padding: 5px 15px 5px 15px;
+		margin-bottom: 15px;
+
+		& h4
+		{
+			display: inline-block;
+			margin: 5px;
+		}
+	}
+
+	& .infoSidebarContainerContent
+	{
+		padding: 0 20px 5px;
+	}
 }
 
 #mapSelectedRoom
 {
 	text-align: center;
+}
+
+#roomDimensionsPortlet
+{
+	//Overwrite default height for portlet
+	height: 100px;
 }

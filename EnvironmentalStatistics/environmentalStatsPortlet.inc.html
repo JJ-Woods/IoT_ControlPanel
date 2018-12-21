@@ -1,11 +1,11 @@
 <link rel="stylesheet" type="text/css" href="EnvironmentalStatistics/environmentalStatistics.css"/>
 <script src="EnvironmentalStatistics/environmentalStatistics.js"></script>
-<div id="environmentalStatsContainer">
-	<div id="environmentalStatsTitleBar">
-		<h4>Environmental Statistics</h4>
-		<img src="EnvironmentalStatistics/settingsIcon.png" alt="environmentalStatsIcon"/>
-	</div>
-	<div id="environmentalStatsContent">
+<div class="infoSidebarContainerTitleBar" id="environmentalStatsTitleBar">
+	<h4>Environmental Statistics</h4>
+	<img src="EnvironmentalStatistics/settingsIcon.png" alt="environmentalStatsIcon"/>
+</div>
+<div class="infoSidebarContainerContent" id="environmentalStatsContent">
+	<div>
 		<div id="environmentalStatsTemp">
 			<h5>Temperature:</h5><var></var>
 		</div>
@@ -16,17 +16,17 @@
 			<h5>CO2:</h5><var></var>
 		</div>
 	</div>
-	<div id="environmentalStatsSettings">
-		<div>
-			<h5>Data</h5>
-			<label>Monitor url <input type="text"></label>
-			<label>Polling rate <input type="text"></label>
-		</div>
-		<div>
-			<h5>Units</h5>
-			<label>Celsius <input type="radio" name="environmentalStatsUnit" value="Celsius" checked="checked"/></label>
-			<label>Fahrenheit <input type="radio" name="environmentalStatsUnit" value="Fahrenheit"/></label>
-			<label>Kelvin <input type="radio" name="environmentalStatsUnit" value="Kelvin"/></label>
-		</div>
-	</div>
+	<img src="EnvironmentalStatistics/graphIcon.png" alt="EnvironmentalStatistics Graph"/>
+</div>
+<div class="infoSidebarContainerContent" id="environmentalStatsSettings">
+	<label>Monitor url <input id="environmentalStatsUrl" type="text"/></label>
+	<label>Poll every <input type="number" id="environmentalStatsPollRate" min="0" max="60"/> minutes</label>
+	<label>
+		Unit
+		<select>
+			<option>Celsius</option>
+			<option>Fahrenheit</option>
+			<option>Kelvin</option>
+		</select>
+	</label>
 </div>

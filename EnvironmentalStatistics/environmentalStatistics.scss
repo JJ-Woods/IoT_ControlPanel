@@ -1,26 +1,5 @@
-#environmentalStatsContainer
-{
-  height: 180px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0 0 10px 10px;
-}
-
 #environmentalStatsTitleBar
 {
-  height: 40px;
-  border-style: none solid solid solid;
-  border-width: 1px;
-  border-radius: 0 0 15px 15px;
-  padding: 5px 15px 5px 15px;
-  margin-bottom: 15px;
-
-  & h4
-  {
-    display: inline-block;
-    margin: 5px;
-  }
-
   & img
   {
     $envStatsDimension: 30px;
@@ -34,8 +13,17 @@
 
 #environmentalStatsContent
 {
-  padding: 0 20px 5px;
   font-weight: bold;
+
+  & div
+  {
+    display: inline-block;
+  }
+
+  & div div
+  {
+    display: block;
+  }
 
   & h5
   {
@@ -43,10 +31,26 @@
     display: inline-block;
     margin-right: 10px;
   }
+
+  & img
+  {
+    $environmentalMonitorGraphIconDimensions: 75px;
+    height: $environmentalMonitorGraphIconDimensions;
+    width: $environmentalMonitorGraphIconDimensions;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 15px;
+  }
 }
 
 #environmentalStatsSettings
 {
-  padding: 0 20px 5px;
   display: none;
+
+  & input[type=number]
+  {
+    width: 50%;
+  }
 }
