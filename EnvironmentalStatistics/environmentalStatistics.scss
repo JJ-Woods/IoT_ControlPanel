@@ -1,6 +1,6 @@
 #environmentalStatsContainer
 {
-  height: 200px;
+  height: 180px;
   border-style: solid;
   border-width: 1px;
   border-radius: 0 0 10px 10px;
@@ -8,7 +8,7 @@
 
 #environmentalStatsTitleBar
 {
-  height: 60px;
+  height: 40px;
   border-style: none solid solid solid;
   border-width: 1px;
   border-radius: 0 0 15px 15px;
@@ -29,12 +29,6 @@
     cursor: pointer;
     position: relative;
     float: right;
-  }
-
-  & p
-  {
-    position: relative;
-    left: 25px;
   }
 }
 
